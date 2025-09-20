@@ -6,6 +6,13 @@ from typing import Any
 from literals import CanvasSize, FontStyle, FontWeight, HorizontalAlignment, ListDirection, MaxSize, OutlineMode, OutlineType, ProductType, ResampleMode, ScaleType, TextSize, Truncate, Tuple2, Vec2, VerticalAlignment
 from classes import ColorGradient, HexColor, Range01, Rotation, Size2, TransparencyGradient, Vector2
 
+@dataclass
+class Page:
+    background_color: HexColor
+    page_title: str
+    icon: int # Decal ID
+    search_description: str
+    thumbnail: int # Decal ID
 
 @dataclass
 class Frame:
@@ -51,7 +58,7 @@ class Text:
 @dataclass
 class Image:
     name: str
-    image_id: int
+    image_id: int # Decal ID
     image_transparency: Range01
     scale_type: ScaleType
     tint: HexColor
