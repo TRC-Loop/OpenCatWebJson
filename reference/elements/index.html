@@ -1,0 +1,4882 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A Python library for working with OpenCat Web JSON">
+      
+      
+      
+        <link rel="canonical" href="https://trc-loop.github.io/opencatwebjson/reference/elements/">
+      
+      
+        <link rel="prev" href="../classes/">
+      
+      
+        <link rel="next" href="../literals/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.20">
+    
+    
+      
+        <title>Elements - OpenCatWebJSON</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.e53b48f4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/_mkdocstrings.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#elements" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="OpenCatWebJSON" class="md-header__button md-logo" aria-label="OpenCatWebJSON" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            OpenCatWebJSON
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Elements
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/TRC-Loop/opencatwebjson" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    TRC-Loop/opencatwebjson
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="OpenCatWebJSON" class="md-nav__button md-logo" aria-label="OpenCatWebJSON" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    OpenCatWebJSON
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/TRC-Loop/opencatwebjson" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    TRC-Loop/opencatwebjson
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../README.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Usage
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Reference
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Reference
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../classes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Classes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Elements
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Elements
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#opencatwebjson.elements" class="md-nav__link">
+    <span class="md-ellipsis">
+      elements
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="elements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#opencatwebjson.elements.Page" class="md-nav__link">
+    <span class="md-ellipsis">
+      Page
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opencatwebjson.elements.Frame" class="md-nav__link">
+    <span class="md-ellipsis">
+      Frame
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opencatwebjson.elements.Text" class="md-nav__link">
+    <span class="md-ellipsis">
+      Text
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opencatwebjson.elements.Image" class="md-nav__link">
+    <span class="md-ellipsis">
+      Image
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opencatwebjson.elements.Link" class="md-nav__link">
+    <span class="md-ellipsis">
+      Link
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opencatwebjson.elements.Button" class="md-nav__link">
+    <span class="md-ellipsis">
+      Button
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opencatwebjson.elements.Donation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Donation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opencatwebjson.elements.Input" class="md-nav__link">
+    <span class="md-ellipsis">
+      Input
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opencatwebjson.elements.ScrollableFrame" class="md-nav__link">
+    <span class="md-ellipsis">
+      ScrollableFrame
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opencatwebjson.elements.Script" class="md-nav__link">
+    <span class="md-ellipsis">
+      Script
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opencatwebjson.elements.Outline" class="md-nav__link">
+    <span class="md-ellipsis">
+      Outline
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opencatwebjson.elements.Corner" class="md-nav__link">
+    <span class="md-ellipsis">
+      Corner
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opencatwebjson.elements.List" class="md-nav__link">
+    <span class="md-ellipsis">
+      List
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opencatwebjson.elements.Grid" class="md-nav__link">
+    <span class="md-ellipsis">
+      Grid
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opencatwebjson.elements.AspectRatio" class="md-nav__link">
+    <span class="md-ellipsis">
+      AspectRatio
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opencatwebjson.elements.Constraint" class="md-nav__link">
+    <span class="md-ellipsis">
+      Constraint
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opencatwebjson.elements.Gradient" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gradient
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opencatwebjson.elements.Padding" class="md-nav__link">
+    <span class="md-ellipsis">
+      Padding
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../literals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Literals
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#opencatwebjson.elements" class="md-nav__link">
+    <span class="md-ellipsis">
+      elements
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="elements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#opencatwebjson.elements.Page" class="md-nav__link">
+    <span class="md-ellipsis">
+      Page
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opencatwebjson.elements.Frame" class="md-nav__link">
+    <span class="md-ellipsis">
+      Frame
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opencatwebjson.elements.Text" class="md-nav__link">
+    <span class="md-ellipsis">
+      Text
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opencatwebjson.elements.Image" class="md-nav__link">
+    <span class="md-ellipsis">
+      Image
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opencatwebjson.elements.Link" class="md-nav__link">
+    <span class="md-ellipsis">
+      Link
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opencatwebjson.elements.Button" class="md-nav__link">
+    <span class="md-ellipsis">
+      Button
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opencatwebjson.elements.Donation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Donation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opencatwebjson.elements.Input" class="md-nav__link">
+    <span class="md-ellipsis">
+      Input
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opencatwebjson.elements.ScrollableFrame" class="md-nav__link">
+    <span class="md-ellipsis">
+      ScrollableFrame
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opencatwebjson.elements.Script" class="md-nav__link">
+    <span class="md-ellipsis">
+      Script
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opencatwebjson.elements.Outline" class="md-nav__link">
+    <span class="md-ellipsis">
+      Outline
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opencatwebjson.elements.Corner" class="md-nav__link">
+    <span class="md-ellipsis">
+      Corner
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opencatwebjson.elements.List" class="md-nav__link">
+    <span class="md-ellipsis">
+      List
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opencatwebjson.elements.Grid" class="md-nav__link">
+    <span class="md-ellipsis">
+      Grid
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opencatwebjson.elements.AspectRatio" class="md-nav__link">
+    <span class="md-ellipsis">
+      AspectRatio
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opencatwebjson.elements.Constraint" class="md-nav__link">
+    <span class="md-ellipsis">
+      Constraint
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opencatwebjson.elements.Gradient" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gradient
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opencatwebjson.elements.Padding" class="md-nav__link">
+    <span class="md-ellipsis">
+      Padding
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="elements">Elements<a class="headerlink" href="#elements" title="Permanent link">&para;</a></h1>
+
+
+<div class="doc doc-object doc-module">
+
+
+
+<h2 id="opencatwebjson.elements" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <span class="doc doc-object-name doc-module-name">opencatwebjson.elements</span>
+
+
+<a href="#opencatwebjson.elements" class="headerlink" title="Permanent link">&para;</a></h2>
+
+    <div class="doc doc-contents first">
+
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="opencatwebjson.elements.Page" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>            <span class="doc doc-object-name doc-class-name">Page</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-dataclass"><code>dataclass</code></small>
+  </span>
+
+<a href="#opencatwebjson.elements.Page" class="headerlink" title="Permanent link">&para;</a></h3>
+<div class="doc-signature highlight"><pre><span></span><code><span class="nf">Page</span><span class="p">(</span>
+    <span class="n">background_color</span><span class="p">,</span>
+    <span class="n">page_title</span><span class="p">,</span>
+    <span class="n">icon</span><span class="p">,</span>
+    <span class="n">search_description</span><span class="p">,</span>
+    <span class="n">thumbnail</span><span class="p">,</span>
+<span class="p">)</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+
+
+        <p>Represents a page in the application with visual and metadata properties.</p>
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Page.background_color">background_color</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="HexColor (opencatwebjson.classes.HexColor)" href="../classes/#opencatwebjson.classes.HexColor">HexColor</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Page background color.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Page.page_title">page_title</span></code></td>
+            <td>
+                  <code><span title="str">str</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Title of the page.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Page.icon">icon</span></code></td>
+            <td>
+                  <code><span title="int">int</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>ID of the page icon decal.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Page.search_description">search_description</span></code></td>
+            <td>
+                  <code><span title="str">str</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Description for search functionality.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Page.thumbnail">thumbnail</span></code></td>
+            <td>
+                  <code><span title="int">int</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>ID of the page thumbnail decal.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="opencatwebjson.elements.Frame" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>            <span class="doc doc-object-name doc-class-name">Frame</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-dataclass"><code>dataclass</code></small>
+  </span>
+
+<a href="#opencatwebjson.elements.Frame" class="headerlink" title="Permanent link">&para;</a></h3>
+<div class="doc-signature highlight"><pre><span></span><code><span class="nf">Frame</span><span class="p">(</span>
+    <span class="n">name</span><span class="p">,</span>
+    <span class="n">background_transparency</span><span class="p">,</span>
+    <span class="n">background_color</span><span class="p">,</span>
+    <span class="n">position</span><span class="p">,</span>
+    <span class="n">size</span><span class="p">,</span>
+    <span class="n">rotation</span><span class="p">,</span>
+    <span class="n">anchor_point</span><span class="p">,</span>
+    <span class="n">layer</span><span class="p">,</span>
+    <span class="n">tooltip</span><span class="p">,</span>
+    <span class="n">clip_descendants</span><span class="p">,</span>
+    <span class="n">visible</span><span class="p">,</span>
+<span class="p">)</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+
+
+        <p>A container UI element for grouping and positioning child elements.</p>
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Frame.name">name</span></code></td>
+            <td>
+                  <code><span title="str">str</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Frame identifier.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Frame.background_transparency">background_transparency</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="Range01 (opencatwebjson.classes.Range01)" href="../classes/#opencatwebjson.classes.Range01">Range01</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Background transparency (0-1).</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Frame.background_color">background_color</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="HexColor (opencatwebjson.classes.HexColor)" href="../classes/#opencatwebjson.classes.HexColor">HexColor</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Background color of the frame.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Frame.position">position</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="Vector2 (opencatwebjson.classes.Vector2)" href="../classes/#opencatwebjson.classes.Vector2">Vector2</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Position of the frame.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Frame.size">size</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="Size2 (opencatwebjson.classes.Size2)" href="../classes/#opencatwebjson.classes.Size2">Size2</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Width and height of the frame.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Frame.rotation">rotation</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="Rotation (opencatwebjson.classes.Rotation)" href="../classes/#opencatwebjson.classes.Rotation">Rotation</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Rotation applied to the frame.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Frame.anchor_point">anchor_point</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="Vec2 (opencatwebjson.literals.Vec2)" href="../literals/#opencatwebjson.literals.Vec2">Vec2</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Anchor point for positioning.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Frame.layer">layer</span></code></td>
+            <td>
+                  <code><span title="int">int</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Rendering order index.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Frame.tooltip">tooltip</span></code></td>
+            <td>
+                  <code><span title="str">str</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Tooltip text displayed on hover.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Frame.clip_descendants">clip_descendants</span></code></td>
+            <td>
+                  <code><span title="bool">bool</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>If True, child elements outside bounds are clipped.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Frame.visible">visible</span></code></td>
+            <td>
+                  <code><span title="bool">bool</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Determines visibility of the frame.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="opencatwebjson.elements.Text" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>            <span class="doc doc-object-name doc-class-name">Text</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-dataclass"><code>dataclass</code></small>
+  </span>
+
+<a href="#opencatwebjson.elements.Text" class="headerlink" title="Permanent link">&para;</a></h3>
+<div class="doc-signature highlight"><pre><span></span><code><span class="nf">Text</span><span class="p">(</span>
+    <span class="n">name</span><span class="p">,</span>
+    <span class="n">text</span><span class="p">,</span>
+    <span class="n">font</span><span class="p">,</span>
+    <span class="n">font_style</span><span class="p">,</span>
+    <span class="n">font_weight</span><span class="p">,</span>
+    <span class="n">horizontal_alignment</span><span class="p">,</span>
+    <span class="n">vertical_alignment</span><span class="p">,</span>
+    <span class="n">text_size</span><span class="p">,</span>
+    <span class="n">text_color</span><span class="p">,</span>
+    <span class="n">text_transparency</span><span class="p">,</span>
+    <span class="n">rich</span><span class="p">,</span>
+    <span class="n">wrap</span><span class="p">,</span>
+    <span class="n">truncate</span><span class="p">,</span>
+    <span class="n">background_transparency</span><span class="p">,</span>
+    <span class="n">background_color</span><span class="p">,</span>
+    <span class="n">position</span><span class="p">,</span>
+    <span class="n">size</span><span class="p">,</span>
+    <span class="n">rotation</span><span class="p">,</span>
+    <span class="n">anchor_point</span><span class="p">,</span>
+    <span class="n">layer</span><span class="p">,</span>
+    <span class="n">tooltip</span><span class="p">,</span>
+    <span class="n">clip_descendants</span><span class="p">,</span>
+    <span class="n">visible</span><span class="p">,</span>
+<span class="p">)</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+
+
+        <p>Represents a text UI element with styling and layout properties.</p>
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Text.name">name</span></code></td>
+            <td>
+                  <code><span title="str">str</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Element identifier.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Text.text">text</span></code></td>
+            <td>
+                  <code><span title="str">str</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Displayed text.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Text.font">font</span></code></td>
+            <td>
+                  <code><span title="str">str</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Font name.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Text.font_style">font_style</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="FontStyle
+
+
+  
+      module-attribute
+   (opencatwebjson.literals.FontStyle)" href="../literals/#opencatwebjson.literals.FontStyle">FontStyle</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Font style (e.g., italic).</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Text.font_weight">font_weight</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="FontWeight
+
+
+  
+      module-attribute
+   (opencatwebjson.literals.FontWeight)" href="../literals/#opencatwebjson.literals.FontWeight">FontWeight</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Font weight (e.g., bold).</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Text.horizontal_alignment">horizontal_alignment</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="HorizontalAlignment
+
+
+  
+      module-attribute
+   (opencatwebjson.literals.HorizontalAlignment)" href="../literals/#opencatwebjson.literals.HorizontalAlignment">HorizontalAlignment</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Horizontal text alignment.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Text.vertical_alignment">vertical_alignment</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="VerticalAlignment
+
+
+  
+      module-attribute
+   (opencatwebjson.literals.VerticalAlignment)" href="../literals/#opencatwebjson.literals.VerticalAlignment">VerticalAlignment</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Vertical text alignment.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Text.text_size">text_size</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="TextSize
+
+
+  
+      module-attribute
+   (opencatwebjson.literals.TextSize)" href="../literals/#opencatwebjson.literals.TextSize">TextSize</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Text size.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Text.text_color">text_color</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="HexColor (opencatwebjson.classes.HexColor)" href="../classes/#opencatwebjson.classes.HexColor">HexColor</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Text color.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Text.text_transparency">text_transparency</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="Range01 (opencatwebjson.classes.Range01)" href="../classes/#opencatwebjson.classes.Range01">Range01</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Text transparency (0-1).</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Text.rich">rich</span></code></td>
+            <td>
+                  <code><span title="bool">bool</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Enables rich text formatting.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Text.wrap">wrap</span></code></td>
+            <td>
+                  <code><span title="bool">bool</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Text wraps inside bounds.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Text.truncate">truncate</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="Truncate
+
+
+  
+      module-attribute
+   (opencatwebjson.literals.Truncate)" href="../literals/#opencatwebjson.literals.Truncate">Truncate</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Truncation mode for overflowing text.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Text.background_transparency">background_transparency</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="Range01 (opencatwebjson.classes.Range01)" href="../classes/#opencatwebjson.classes.Range01">Range01</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Background transparency.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Text.background_color">background_color</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="HexColor (opencatwebjson.classes.HexColor)" href="../classes/#opencatwebjson.classes.HexColor">HexColor</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Background color.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Text.position">position</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="Vector2 (opencatwebjson.classes.Vector2)" href="../classes/#opencatwebjson.classes.Vector2">Vector2</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Position of the text element.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Text.size">size</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="Size2 (opencatwebjson.classes.Size2)" href="../classes/#opencatwebjson.classes.Size2">Size2</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Width and height.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Text.rotation">rotation</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="Rotation (opencatwebjson.classes.Rotation)" href="../classes/#opencatwebjson.classes.Rotation">Rotation</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Rotation applied to text.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Text.anchor_point">anchor_point</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="Vec2 (opencatwebjson.literals.Vec2)" href="../literals/#opencatwebjson.literals.Vec2">Vec2</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Anchor point for positioning.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Text.layer">layer</span></code></td>
+            <td>
+                  <code><span title="int">int</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Rendering layer index.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Text.tooltip">tooltip</span></code></td>
+            <td>
+                  <code><span title="str">str</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Tooltip text on hover.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Text.clip_descendants">clip_descendants</span></code></td>
+            <td>
+                  <code><span title="bool">bool</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Clips children if True.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Text.visible">visible</span></code></td>
+            <td>
+                  <code><span title="bool">bool</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Visibility of the element.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="opencatwebjson.elements.Image" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>            <span class="doc doc-object-name doc-class-name">Image</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-dataclass"><code>dataclass</code></small>
+  </span>
+
+<a href="#opencatwebjson.elements.Image" class="headerlink" title="Permanent link">&para;</a></h3>
+<div class="doc-signature highlight"><pre><span></span><code><span class="nf">Image</span><span class="p">(</span>
+    <span class="n">name</span><span class="p">,</span>
+    <span class="n">image_id</span><span class="p">,</span>
+    <span class="n">image_transparency</span><span class="p">,</span>
+    <span class="n">scale_type</span><span class="p">,</span>
+    <span class="n">tint</span><span class="p">,</span>
+    <span class="n">resample_mode</span><span class="p">,</span>
+    <span class="n">background_transparency</span><span class="p">,</span>
+    <span class="n">background_color</span><span class="p">,</span>
+    <span class="n">position</span><span class="p">,</span>
+    <span class="n">size</span><span class="p">,</span>
+    <span class="n">rotation</span><span class="p">,</span>
+    <span class="n">anchor_point</span><span class="p">,</span>
+    <span class="n">layer</span><span class="p">,</span>
+    <span class="n">tooltip</span><span class="p">,</span>
+    <span class="n">clip_descendants</span><span class="p">,</span>
+    <span class="n">visible</span><span class="p">,</span>
+<span class="p">)</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+
+
+        <p>Represents an image element in the UI.</p>
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Image.name">name</span></code></td>
+            <td>
+                  <code><span title="str">str</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Element identifier.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Image.image_id">image_id</span></code></td>
+            <td>
+                  <code><span title="int">int</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>ID of the decal image.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Image.image_transparency">image_transparency</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="Range01 (opencatwebjson.classes.Range01)" href="../classes/#opencatwebjson.classes.Range01">Range01</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Image transparency.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Image.scale_type">scale_type</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="ScaleType
+
+
+  
+      module-attribute
+   (opencatwebjson.literals.ScaleType)" href="../literals/#opencatwebjson.literals.ScaleType">ScaleType</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Scaling mode of the image.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Image.tint">tint</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="HexColor (opencatwebjson.classes.HexColor)" href="../classes/#opencatwebjson.classes.HexColor">HexColor</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Tint applied to the image.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Image.resample_mode">resample_mode</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="ResampleMode
+
+
+  
+      module-attribute
+   (opencatwebjson.literals.ResampleMode)" href="../literals/#opencatwebjson.literals.ResampleMode">ResampleMode</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Image resampling mode.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Image.background_transparency">background_transparency</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="Range01 (opencatwebjson.classes.Range01)" href="../classes/#opencatwebjson.classes.Range01">Range01</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Background transparency.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Image.background_color">background_color</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="HexColor (opencatwebjson.classes.HexColor)" href="../classes/#opencatwebjson.classes.HexColor">HexColor</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Background color.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Image.position">position</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="Vector2 (opencatwebjson.classes.Vector2)" href="../classes/#opencatwebjson.classes.Vector2">Vector2</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Position of the image element.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Image.size">size</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="Size2 (opencatwebjson.classes.Size2)" href="../classes/#opencatwebjson.classes.Size2">Size2</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Width and height.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Image.rotation">rotation</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="Rotation (opencatwebjson.classes.Rotation)" href="../classes/#opencatwebjson.classes.Rotation">Rotation</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Rotation applied.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Image.anchor_point">anchor_point</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="Vec2 (opencatwebjson.literals.Vec2)" href="../literals/#opencatwebjson.literals.Vec2">Vec2</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Anchor point for positioning.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Image.layer">layer</span></code></td>
+            <td>
+                  <code><span title="int">int</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Rendering order index.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Image.tooltip">tooltip</span></code></td>
+            <td>
+                  <code><span title="str">str</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Tooltip text.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Image.clip_descendants">clip_descendants</span></code></td>
+            <td>
+                  <code><span title="bool">bool</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Clips children if True.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Image.visible">visible</span></code></td>
+            <td>
+                  <code><span title="bool">bool</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Visibility.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="opencatwebjson.elements.Link" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>            <span class="doc doc-object-name doc-class-name">Link</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-dataclass"><code>dataclass</code></small>
+  </span>
+
+<a href="#opencatwebjson.elements.Link" class="headerlink" title="Permanent link">&para;</a></h3>
+<div class="doc-signature highlight"><pre><span></span><code><span class="nf">Link</span><span class="p">(</span>
+    <span class="n">name</span><span class="p">,</span>
+    <span class="n">reference</span><span class="p">,</span>
+    <span class="n">open_in_new_tab</span><span class="p">,</span>
+    <span class="n">text</span><span class="p">,</span>
+    <span class="n">font</span><span class="p">,</span>
+    <span class="n">font_style</span><span class="p">,</span>
+    <span class="n">font_weight</span><span class="p">,</span>
+    <span class="n">horizontal_alignment</span><span class="p">,</span>
+    <span class="n">vertical_alignment</span><span class="p">,</span>
+    <span class="n">text_size</span><span class="p">,</span>
+    <span class="n">text_color</span><span class="p">,</span>
+    <span class="n">text_transparency</span><span class="p">,</span>
+    <span class="n">automatic_color</span><span class="p">,</span>
+    <span class="n">rich</span><span class="p">,</span>
+    <span class="n">wrap</span><span class="p">,</span>
+    <span class="n">truncate</span><span class="p">,</span>
+    <span class="n">background_transparency</span><span class="p">,</span>
+    <span class="n">background_color</span><span class="p">,</span>
+    <span class="n">position</span><span class="p">,</span>
+    <span class="n">size</span><span class="p">,</span>
+    <span class="n">rotation</span><span class="p">,</span>
+    <span class="n">anchor_point</span><span class="p">,</span>
+    <span class="n">layer</span><span class="p">,</span>
+    <span class="n">tooltip</span><span class="p">,</span>
+    <span class="n">clip_descendants</span><span class="p">,</span>
+    <span class="n">visible</span><span class="p">,</span>
+<span class="p">)</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+
+
+        <p>Clickable hyperlink UI element with text styling.</p>
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Link.name">name</span></code></td>
+            <td>
+                  <code><span title="str">str</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Element identifier.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Link.reference">reference</span></code></td>
+            <td>
+                  <code><span title="str">str</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>URL or internal reference target.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Link.open_in_new_tab">open_in_new_tab</span></code></td>
+            <td>
+                  <code><span title="bool">bool</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Opens link in a new tab if True.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Link.text">text</span></code></td>
+            <td>
+                  <code><span title="str">str</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Displayed text.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Link.font">font</span></code></td>
+            <td>
+                  <code><span title="str">str</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Font name.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Link.font_style">font_style</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="FontStyle
+
+
+  
+      module-attribute
+   (opencatwebjson.literals.FontStyle)" href="../literals/#opencatwebjson.literals.FontStyle">FontStyle</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Font style.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Link.font_weight">font_weight</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="FontWeight
+
+
+  
+      module-attribute
+   (opencatwebjson.literals.FontWeight)" href="../literals/#opencatwebjson.literals.FontWeight">FontWeight</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Font weight.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Link.horizontal_alignment">horizontal_alignment</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="HorizontalAlignment
+
+
+  
+      module-attribute
+   (opencatwebjson.literals.HorizontalAlignment)" href="../literals/#opencatwebjson.literals.HorizontalAlignment">HorizontalAlignment</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Horizontal text alignment.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Link.vertical_alignment">vertical_alignment</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="VerticalAlignment
+
+
+  
+      module-attribute
+   (opencatwebjson.literals.VerticalAlignment)" href="../literals/#opencatwebjson.literals.VerticalAlignment">VerticalAlignment</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Vertical text alignment.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Link.text_size">text_size</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="TextSize
+
+
+  
+      module-attribute
+   (opencatwebjson.literals.TextSize)" href="../literals/#opencatwebjson.literals.TextSize">TextSize</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Text size.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Link.text_color">text_color</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="HexColor (opencatwebjson.classes.HexColor)" href="../classes/#opencatwebjson.classes.HexColor">HexColor</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Text color.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Link.text_transparency">text_transparency</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="Range01 (opencatwebjson.classes.Range01)" href="../classes/#opencatwebjson.classes.Range01">Range01</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Text transparency.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Link.automatic_color">automatic_color</span></code></td>
+            <td>
+                  <code><span title="bool">bool</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Automatically adjust color based on theme.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Link.rich">rich</span></code></td>
+            <td>
+                  <code><span title="bool">bool</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Enables rich text.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Link.wrap">wrap</span></code></td>
+            <td>
+                  <code><span title="bool">bool</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Enables text wrapping.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Link.truncate">truncate</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="Truncate
+
+
+  
+      module-attribute
+   (opencatwebjson.literals.Truncate)" href="../literals/#opencatwebjson.literals.Truncate">Truncate</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Text truncation method.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Link.background_transparency">background_transparency</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="Range01 (opencatwebjson.classes.Range01)" href="../classes/#opencatwebjson.classes.Range01">Range01</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Background transparency.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Link.background_color">background_color</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="HexColor (opencatwebjson.classes.HexColor)" href="../classes/#opencatwebjson.classes.HexColor">HexColor</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Background color.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Link.position">position</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="Vector2 (opencatwebjson.classes.Vector2)" href="../classes/#opencatwebjson.classes.Vector2">Vector2</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Position.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Link.size">size</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="Size2 (opencatwebjson.classes.Size2)" href="../classes/#opencatwebjson.classes.Size2">Size2</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Width and height.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Link.rotation">rotation</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="Rotation (opencatwebjson.classes.Rotation)" href="../classes/#opencatwebjson.classes.Rotation">Rotation</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Rotation applied.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Link.anchor_point">anchor_point</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="Vec2 (opencatwebjson.literals.Vec2)" href="../literals/#opencatwebjson.literals.Vec2">Vec2</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Anchor point.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Link.layer">layer</span></code></td>
+            <td>
+                  <code><span title="int">int</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Rendering order.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Link.tooltip">tooltip</span></code></td>
+            <td>
+                  <code><span title="str">str</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Tooltip text.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Link.clip_descendants">clip_descendants</span></code></td>
+            <td>
+                  <code><span title="bool">bool</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Clips children if True.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Link.visible">visible</span></code></td>
+            <td>
+                  <code><span title="bool">bool</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Visibility.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="opencatwebjson.elements.Button" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>            <span class="doc doc-object-name doc-class-name">Button</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-dataclass"><code>dataclass</code></small>
+  </span>
+
+<a href="#opencatwebjson.elements.Button" class="headerlink" title="Permanent link">&para;</a></h3>
+<div class="doc-signature highlight"><pre><span></span><code><span class="nf">Button</span><span class="p">(</span>
+    <span class="n">name</span><span class="p">,</span>
+    <span class="n">text</span><span class="p">,</span>
+    <span class="n">font</span><span class="p">,</span>
+    <span class="n">font_style</span><span class="p">,</span>
+    <span class="n">font_weight</span><span class="p">,</span>
+    <span class="n">horizontal_alignment</span><span class="p">,</span>
+    <span class="n">vertical_alignment</span><span class="p">,</span>
+    <span class="n">text_size</span><span class="p">,</span>
+    <span class="n">text_color</span><span class="p">,</span>
+    <span class="n">text_transparency</span><span class="p">,</span>
+    <span class="n">automatic_color</span><span class="p">,</span>
+    <span class="n">rich</span><span class="p">,</span>
+    <span class="n">wrap</span><span class="p">,</span>
+    <span class="n">truncate</span><span class="p">,</span>
+    <span class="n">background_transparency</span><span class="p">,</span>
+    <span class="n">background_color</span><span class="p">,</span>
+    <span class="n">position</span><span class="p">,</span>
+    <span class="n">size</span><span class="p">,</span>
+    <span class="n">rotation</span><span class="p">,</span>
+    <span class="n">anchor_point</span><span class="p">,</span>
+    <span class="n">layer</span><span class="p">,</span>
+    <span class="n">tooltip</span><span class="p">,</span>
+    <span class="n">clip_descendants</span><span class="p">,</span>
+    <span class="n">visible</span><span class="p">,</span>
+<span class="p">)</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+
+
+        <p>Clickable button element with text and styling properties.</p>
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Button.name">name</span></code></td>
+            <td>
+                  <code><span title="str">str</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Element identifier.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Button.text">text</span></code></td>
+            <td>
+                  <code><span title="str">str</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Displayed text.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Button.font">font</span></code></td>
+            <td>
+                  <code><span title="str">str</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Font name.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Button.font_style">font_style</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="FontStyle
+
+
+  
+      module-attribute
+   (opencatwebjson.literals.FontStyle)" href="../literals/#opencatwebjson.literals.FontStyle">FontStyle</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Font style.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Button.font_weight">font_weight</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="FontWeight
+
+
+  
+      module-attribute
+   (opencatwebjson.literals.FontWeight)" href="../literals/#opencatwebjson.literals.FontWeight">FontWeight</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Font weight.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Button.horizontal_alignment">horizontal_alignment</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="HorizontalAlignment
+
+
+  
+      module-attribute
+   (opencatwebjson.literals.HorizontalAlignment)" href="../literals/#opencatwebjson.literals.HorizontalAlignment">HorizontalAlignment</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Text horizontal alignment.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Button.vertical_alignment">vertical_alignment</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="VerticalAlignment
+
+
+  
+      module-attribute
+   (opencatwebjson.literals.VerticalAlignment)" href="../literals/#opencatwebjson.literals.VerticalAlignment">VerticalAlignment</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Text vertical alignment.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Button.text_size">text_size</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="TextSize
+
+
+  
+      module-attribute
+   (opencatwebjson.literals.TextSize)" href="../literals/#opencatwebjson.literals.TextSize">TextSize</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Text size.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Button.text_color">text_color</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="HexColor (opencatwebjson.classes.HexColor)" href="../classes/#opencatwebjson.classes.HexColor">HexColor</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Text color.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Button.text_transparency">text_transparency</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="Range01 (opencatwebjson.classes.Range01)" href="../classes/#opencatwebjson.classes.Range01">Range01</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Text transparency.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Button.automatic_color">automatic_color</span></code></td>
+            <td>
+                  <code><span title="bool">bool</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Adjust color automatically.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Button.rich">rich</span></code></td>
+            <td>
+                  <code><span title="bool">bool</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Rich text enabled.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Button.wrap">wrap</span></code></td>
+            <td>
+                  <code><span title="bool">bool</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Wrap text inside element.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Button.truncate">truncate</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="Truncate
+
+
+  
+      module-attribute
+   (opencatwebjson.literals.Truncate)" href="../literals/#opencatwebjson.literals.Truncate">Truncate</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Truncation method.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Button.background_transparency">background_transparency</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="Range01 (opencatwebjson.classes.Range01)" href="../classes/#opencatwebjson.classes.Range01">Range01</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Background transparency.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Button.background_color">background_color</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="HexColor (opencatwebjson.classes.HexColor)" href="../classes/#opencatwebjson.classes.HexColor">HexColor</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Background color.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Button.position">position</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="Vector2 (opencatwebjson.classes.Vector2)" href="../classes/#opencatwebjson.classes.Vector2">Vector2</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Position.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Button.size">size</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="Size2 (opencatwebjson.classes.Size2)" href="../classes/#opencatwebjson.classes.Size2">Size2</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Width and height.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Button.rotation">rotation</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="Rotation (opencatwebjson.classes.Rotation)" href="../classes/#opencatwebjson.classes.Rotation">Rotation</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Rotation applied.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Button.anchor_point">anchor_point</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="Vec2 (opencatwebjson.literals.Vec2)" href="../literals/#opencatwebjson.literals.Vec2">Vec2</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Anchor point.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Button.layer">layer</span></code></td>
+            <td>
+                  <code><span title="int">int</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Rendering layer.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Button.tooltip">tooltip</span></code></td>
+            <td>
+                  <code><span title="str">str</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Tooltip text.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Button.clip_descendants">clip_descendants</span></code></td>
+            <td>
+                  <code><span title="bool">bool</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Clip children.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Button.visible">visible</span></code></td>
+            <td>
+                  <code><span title="bool">bool</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Visibility.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="opencatwebjson.elements.Donation" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>            <span class="doc doc-object-name doc-class-name">Donation</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-dataclass"><code>dataclass</code></small>
+  </span>
+
+<a href="#opencatwebjson.elements.Donation" class="headerlink" title="Permanent link">&para;</a></h3>
+<div class="doc-signature highlight"><pre><span></span><code><span class="nf">Donation</span><span class="p">(</span>
+    <span class="n">name</span><span class="p">,</span>
+    <span class="n">item_id</span><span class="p">,</span>
+    <span class="n">reference</span><span class="p">,</span>
+    <span class="n">product_type</span><span class="p">,</span>
+    <span class="n">text</span><span class="p">,</span>
+    <span class="n">font</span><span class="p">,</span>
+    <span class="n">font_style</span><span class="p">,</span>
+    <span class="n">font_weight</span><span class="p">,</span>
+    <span class="n">horizontal_alignment</span><span class="p">,</span>
+    <span class="n">vertical_alignment</span><span class="p">,</span>
+    <span class="n">text_size</span><span class="p">,</span>
+    <span class="n">text_color</span><span class="p">,</span>
+    <span class="n">text_transparency</span><span class="p">,</span>
+    <span class="n">automatic_color</span><span class="p">,</span>
+    <span class="n">rich</span><span class="p">,</span>
+    <span class="n">wrap</span><span class="p">,</span>
+    <span class="n">truncate</span><span class="p">,</span>
+    <span class="n">background_transparency</span><span class="p">,</span>
+    <span class="n">background_color</span><span class="p">,</span>
+    <span class="n">position</span><span class="p">,</span>
+    <span class="n">size</span><span class="p">,</span>
+    <span class="n">rotation</span><span class="p">,</span>
+    <span class="n">anchor_point</span><span class="p">,</span>
+    <span class="n">layer</span><span class="p">,</span>
+    <span class="n">tooltip</span><span class="p">,</span>
+    <span class="n">clip_descendants</span><span class="p">,</span>
+    <span class="n">visible</span><span class="p">,</span>
+<span class="p">)</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+
+
+        <p>Represents a purchasable donation item element.</p>
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Donation.name">name</span></code></td>
+            <td>
+                  <code><span title="str">str</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Element identifier.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Donation.item_id">item_id</span></code></td>
+            <td>
+                  <code><span title="int">int</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>ID of the item.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Donation.reference">reference</span></code></td>
+            <td>
+                  <code><span title="str">str</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Reference URL or product link.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Donation.product_type">product_type</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="ProductType
+
+
+  
+      module-attribute
+   (opencatwebjson.literals.ProductType)" href="../literals/#opencatwebjson.literals.ProductType">ProductType</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Type of product.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Donation.text">text</span></code></td>
+            <td>
+                  <code><span title="str">str</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Displayed text.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Donation.font">font</span></code></td>
+            <td>
+                  <code><span title="str">str</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Font name.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Donation.font_style">font_style</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="FontStyle
+
+
+  
+      module-attribute
+   (opencatwebjson.literals.FontStyle)" href="../literals/#opencatwebjson.literals.FontStyle">FontStyle</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Font style.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Donation.font_weight">font_weight</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="FontWeight
+
+
+  
+      module-attribute
+   (opencatwebjson.literals.FontWeight)" href="../literals/#opencatwebjson.literals.FontWeight">FontWeight</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Font weight.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Donation.horizontal_alignment">horizontal_alignment</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="HorizontalAlignment
+
+
+  
+      module-attribute
+   (opencatwebjson.literals.HorizontalAlignment)" href="../literals/#opencatwebjson.literals.HorizontalAlignment">HorizontalAlignment</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Text alignment horizontal.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Donation.vertical_alignment">vertical_alignment</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="VerticalAlignment
+
+
+  
+      module-attribute
+   (opencatwebjson.literals.VerticalAlignment)" href="../literals/#opencatwebjson.literals.VerticalAlignment">VerticalAlignment</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Text alignment vertical.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Donation.text_size">text_size</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="TextSize
+
+
+  
+      module-attribute
+   (opencatwebjson.literals.TextSize)" href="../literals/#opencatwebjson.literals.TextSize">TextSize</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Text size.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Donation.text_color">text_color</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="HexColor (opencatwebjson.classes.HexColor)" href="../classes/#opencatwebjson.classes.HexColor">HexColor</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Text color.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Donation.text_transparency">text_transparency</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="Range01 (opencatwebjson.classes.Range01)" href="../classes/#opencatwebjson.classes.Range01">Range01</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Text transparency.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Donation.automatic_color">automatic_color</span></code></td>
+            <td>
+                  <code><span title="bool">bool</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Auto color adjustment.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Donation.rich">rich</span></code></td>
+            <td>
+                  <code><span title="bool">bool</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Enable rich text.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Donation.wrap">wrap</span></code></td>
+            <td>
+                  <code><span title="bool">bool</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Wrap text.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Donation.truncate">truncate</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="Truncate
+
+
+  
+      module-attribute
+   (opencatwebjson.literals.Truncate)" href="../literals/#opencatwebjson.literals.Truncate">Truncate</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Truncate method.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Donation.background_transparency">background_transparency</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="Range01 (opencatwebjson.classes.Range01)" href="../classes/#opencatwebjson.classes.Range01">Range01</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Background transparency.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Donation.background_color">background_color</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="HexColor (opencatwebjson.classes.HexColor)" href="../classes/#opencatwebjson.classes.HexColor">HexColor</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Background color.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Donation.position">position</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="Vector2 (opencatwebjson.classes.Vector2)" href="../classes/#opencatwebjson.classes.Vector2">Vector2</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Position.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Donation.size">size</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="Size2 (opencatwebjson.classes.Size2)" href="../classes/#opencatwebjson.classes.Size2">Size2</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Width and height.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Donation.rotation">rotation</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="Rotation (opencatwebjson.classes.Rotation)" href="../classes/#opencatwebjson.classes.Rotation">Rotation</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Rotation applied.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Donation.anchor_point">anchor_point</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="Vec2 (opencatwebjson.literals.Vec2)" href="../literals/#opencatwebjson.literals.Vec2">Vec2</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Anchor point.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Donation.layer">layer</span></code></td>
+            <td>
+                  <code><span title="int">int</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Rendering order.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Donation.tooltip">tooltip</span></code></td>
+            <td>
+                  <code><span title="str">str</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Tooltip text.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Donation.clip_descendants">clip_descendants</span></code></td>
+            <td>
+                  <code><span title="bool">bool</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Clip children if True.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Donation.visible">visible</span></code></td>
+            <td>
+                  <code><span title="bool">bool</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Visibility.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="opencatwebjson.elements.Input" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>            <span class="doc doc-object-name doc-class-name">Input</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-dataclass"><code>dataclass</code></small>
+  </span>
+
+<a href="#opencatwebjson.elements.Input" class="headerlink" title="Permanent link">&para;</a></h3>
+<div class="doc-signature highlight"><pre><span></span><code><span class="nf">Input</span><span class="p">(</span>
+    <span class="n">name</span><span class="p">,</span>
+    <span class="n">placeholder</span><span class="p">,</span>
+    <span class="n">text</span><span class="p">,</span>
+    <span class="n">font</span><span class="p">,</span>
+    <span class="n">font_style</span><span class="p">,</span>
+    <span class="n">font_weight</span><span class="p">,</span>
+    <span class="n">horizontal_alignment</span><span class="p">,</span>
+    <span class="n">vertical_alignment</span><span class="p">,</span>
+    <span class="n">text_size</span><span class="p">,</span>
+    <span class="n">text_color</span><span class="p">,</span>
+    <span class="n">text_transparency</span><span class="p">,</span>
+    <span class="n">placeholder_color</span><span class="p">,</span>
+    <span class="n">automatic_color</span><span class="p">,</span>
+    <span class="n">rich</span><span class="p">,</span>
+    <span class="n">wrap</span><span class="p">,</span>
+    <span class="n">truncate</span><span class="p">,</span>
+    <span class="n">editable</span><span class="p">,</span>
+    <span class="n">multi_line</span><span class="p">,</span>
+    <span class="n">background_transparency</span><span class="p">,</span>
+    <span class="n">background_color</span><span class="p">,</span>
+    <span class="n">position</span><span class="p">,</span>
+    <span class="n">size</span><span class="p">,</span>
+    <span class="n">rotation</span><span class="p">,</span>
+    <span class="n">anchor_point</span><span class="p">,</span>
+    <span class="n">layer</span><span class="p">,</span>
+    <span class="n">tooltip</span><span class="p">,</span>
+    <span class="n">clip_descendants</span><span class="p">,</span>
+    <span class="n">visible</span><span class="p">,</span>
+<span class="p">)</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+
+
+        <p>Input text element for user input.</p>
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Input.name">name</span></code></td>
+            <td>
+                  <code><span title="str">str</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Element identifier.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Input.placeholder">placeholder</span></code></td>
+            <td>
+                  <code><span title="str">str</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Placeholder text.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Input.text">text</span></code></td>
+            <td>
+                  <code><span title="str">str</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Current input text.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Input.font">font</span></code></td>
+            <td>
+                  <code><span title="str">str</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Font name.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Input.font_style">font_style</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="FontStyle
+
+
+  
+      module-attribute
+   (opencatwebjson.literals.FontStyle)" href="../literals/#opencatwebjson.literals.FontStyle">FontStyle</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Font style.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Input.font_weight">font_weight</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="FontWeight
+
+
+  
+      module-attribute
+   (opencatwebjson.literals.FontWeight)" href="../literals/#opencatwebjson.literals.FontWeight">FontWeight</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Font weight.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Input.horizontal_alignment">horizontal_alignment</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="HorizontalAlignment
+
+
+  
+      module-attribute
+   (opencatwebjson.literals.HorizontalAlignment)" href="../literals/#opencatwebjson.literals.HorizontalAlignment">HorizontalAlignment</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Text horizontal alignment.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Input.vertical_alignment">vertical_alignment</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="VerticalAlignment
+
+
+  
+      module-attribute
+   (opencatwebjson.literals.VerticalAlignment)" href="../literals/#opencatwebjson.literals.VerticalAlignment">VerticalAlignment</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Text vertical alignment.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Input.text_size">text_size</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="TextSize
+
+
+  
+      module-attribute
+   (opencatwebjson.literals.TextSize)" href="../literals/#opencatwebjson.literals.TextSize">TextSize</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Text size.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Input.text_color">text_color</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="HexColor (opencatwebjson.classes.HexColor)" href="../classes/#opencatwebjson.classes.HexColor">HexColor</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Text color.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Input.text_transparency">text_transparency</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="Range01 (opencatwebjson.classes.Range01)" href="../classes/#opencatwebjson.classes.Range01">Range01</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Text transparency.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Input.placeholder_color">placeholder_color</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="HexColor (opencatwebjson.classes.HexColor)" href="../classes/#opencatwebjson.classes.HexColor">HexColor</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Placeholder text color.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Input.automatic_color">automatic_color</span></code></td>
+            <td>
+                  <code><span title="bool">bool</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Auto color adjustment.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Input.rich">rich</span></code></td>
+            <td>
+                  <code><span title="bool">bool</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Rich text enabled.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Input.wrap">wrap</span></code></td>
+            <td>
+                  <code><span title="bool">bool</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Wrap text inside bounds.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Input.truncate">truncate</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="Truncate
+
+
+  
+      module-attribute
+   (opencatwebjson.literals.Truncate)" href="../literals/#opencatwebjson.literals.Truncate">Truncate</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Truncate method.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Input.editable">editable</span></code></td>
+            <td>
+                  <code><span title="bool">bool</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>If True, text is editable.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Input.multi_line">multi_line</span></code></td>
+            <td>
+                  <code><span title="bool">bool</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Multi-line input.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Input.background_transparency">background_transparency</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="Range01 (opencatwebjson.classes.Range01)" href="../classes/#opencatwebjson.classes.Range01">Range01</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Background transparency.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Input.background_color">background_color</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="HexColor (opencatwebjson.classes.HexColor)" href="../classes/#opencatwebjson.classes.HexColor">HexColor</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Background color.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Input.position">position</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="Vector2 (opencatwebjson.classes.Vector2)" href="../classes/#opencatwebjson.classes.Vector2">Vector2</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Position.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Input.size">size</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="Size2 (opencatwebjson.classes.Size2)" href="../classes/#opencatwebjson.classes.Size2">Size2</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Width and height.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Input.rotation">rotation</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="Rotation (opencatwebjson.classes.Rotation)" href="../classes/#opencatwebjson.classes.Rotation">Rotation</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Rotation applied.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Input.anchor_point">anchor_point</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="Vec2 (opencatwebjson.literals.Vec2)" href="../literals/#opencatwebjson.literals.Vec2">Vec2</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Anchor point.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Input.layer">layer</span></code></td>
+            <td>
+                  <code><span title="int">int</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Rendering layer.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Input.tooltip">tooltip</span></code></td>
+            <td>
+                  <code><span title="str">str</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Tooltip text.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Input.clip_descendants">clip_descendants</span></code></td>
+            <td>
+                  <code><span title="bool">bool</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Clip children if True.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Input.visible">visible</span></code></td>
+            <td>
+                  <code><span title="bool">bool</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Visibility.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="opencatwebjson.elements.ScrollableFrame" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>            <span class="doc doc-object-name doc-class-name">ScrollableFrame</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-dataclass"><code>dataclass</code></small>
+  </span>
+
+<a href="#opencatwebjson.elements.ScrollableFrame" class="headerlink" title="Permanent link">&para;</a></h3>
+<div class="doc-signature highlight"><pre><span></span><code><span class="nf">ScrollableFrame</span><span class="p">(</span>
+    <span class="n">name</span><span class="p">,</span>
+    <span class="n">scrollbar_color</span><span class="p">,</span>
+    <span class="n">scrollbar_transparency</span><span class="p">,</span>
+    <span class="n">scrollbar_thickness</span><span class="p">,</span>
+    <span class="n">canvas_size</span><span class="p">,</span>
+    <span class="n">background_transparency</span><span class="p">,</span>
+    <span class="n">background_color</span><span class="p">,</span>
+    <span class="n">position</span><span class="p">,</span>
+    <span class="n">size</span><span class="p">,</span>
+    <span class="n">rotation</span><span class="p">,</span>
+    <span class="n">anchor_point</span><span class="p">,</span>
+    <span class="n">layer</span><span class="p">,</span>
+    <span class="n">tooltip</span><span class="p">,</span>
+    <span class="n">clip_descendants</span><span class="p">,</span>
+    <span class="n">visible</span><span class="p">,</span>
+<span class="p">)</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+
+
+        <p>Frame element with a scrollable canvas.</p>
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.ScrollableFrame.name">name</span></code></td>
+            <td>
+                  <code><span title="str">str</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Element identifier.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.ScrollableFrame.scrollbar_color">scrollbar_color</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="HexColor (opencatwebjson.classes.HexColor)" href="../classes/#opencatwebjson.classes.HexColor">HexColor</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Scrollbar color.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.ScrollableFrame.scrollbar_transparency">scrollbar_transparency</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="Range01 (opencatwebjson.classes.Range01)" href="../classes/#opencatwebjson.classes.Range01">Range01</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Scrollbar transparency.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.ScrollableFrame.scrollbar_thickness">scrollbar_thickness</span></code></td>
+            <td>
+                  <code><span title="int">int</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Scrollbar thickness.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.ScrollableFrame.canvas_size">canvas_size</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="CanvasSize
+
+
+  
+      module-attribute
+   (opencatwebjson.literals.CanvasSize)" href="../literals/#opencatwebjson.literals.CanvasSize">CanvasSize</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Scrollable canvas size.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.ScrollableFrame.background_transparency">background_transparency</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="Range01 (opencatwebjson.classes.Range01)" href="../classes/#opencatwebjson.classes.Range01">Range01</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Background transparency.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.ScrollableFrame.background_color">background_color</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="HexColor (opencatwebjson.classes.HexColor)" href="../classes/#opencatwebjson.classes.HexColor">HexColor</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Background color.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.ScrollableFrame.position">position</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="Vector2 (opencatwebjson.classes.Vector2)" href="../classes/#opencatwebjson.classes.Vector2">Vector2</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Position.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.ScrollableFrame.size">size</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="Size2 (opencatwebjson.classes.Size2)" href="../classes/#opencatwebjson.classes.Size2">Size2</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Width and height.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.ScrollableFrame.rotation">rotation</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="Rotation (opencatwebjson.classes.Rotation)" href="../classes/#opencatwebjson.classes.Rotation">Rotation</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Rotation applied.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.ScrollableFrame.anchor_point">anchor_point</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="Vec2 (opencatwebjson.literals.Vec2)" href="../literals/#opencatwebjson.literals.Vec2">Vec2</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Anchor point.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.ScrollableFrame.layer">layer</span></code></td>
+            <td>
+                  <code><span title="int">int</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Rendering layer.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.ScrollableFrame.tooltip">tooltip</span></code></td>
+            <td>
+                  <code><span title="str">str</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Tooltip text.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.ScrollableFrame.clip_descendants">clip_descendants</span></code></td>
+            <td>
+                  <code><span title="bool">bool</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Clip children if True.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.ScrollableFrame.visible">visible</span></code></td>
+            <td>
+                  <code><span title="bool">bool</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Visibility.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="opencatwebjson.elements.Script" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>            <span class="doc doc-object-name doc-class-name">Script</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-dataclass"><code>dataclass</code></small>
+  </span>
+
+<a href="#opencatwebjson.elements.Script" class="headerlink" title="Permanent link">&para;</a></h3>
+<div class="doc-signature highlight"><pre><span></span><code><span class="nf">Script</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">enabled</span><span class="p">,</span> <span class="n">_content</span><span class="p">)</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+
+
+        <p>Script element representing executable code.</p>
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Script.name">name</span></code></td>
+            <td>
+                  <code><span title="str">str</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Script identifier.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Script.enabled">enabled</span></code></td>
+            <td>
+                  <code><span title="bool">bool</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>If True, the script is active.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Script._content">_content</span></code></td>
+            <td>
+                  <code><span title="typing.Any">Any</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Script content placeholder (implementation TBD).</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="opencatwebjson.elements.Outline" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>            <span class="doc doc-object-name doc-class-name">Outline</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-dataclass"><code>dataclass</code></small>
+  </span>
+
+<a href="#opencatwebjson.elements.Outline" class="headerlink" title="Permanent link">&para;</a></h3>
+<div class="doc-signature highlight"><pre><span></span><code><span class="nf">Outline</span><span class="p">(</span>
+    <span class="n">name</span><span class="p">,</span>
+    <span class="n">mode</span><span class="p">,</span>
+    <span class="nb">type</span><span class="p">,</span>
+    <span class="n">outline_color</span><span class="p">,</span>
+    <span class="n">outline_thickness</span><span class="p">,</span>
+    <span class="n">outline_transparency</span><span class="p">,</span>
+<span class="p">)</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+
+
+        <p>Styling outline applied to UI elements.</p>
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Outline.name">name</span></code></td>
+            <td>
+                  <code><span title="str">str</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Outline identifier.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Outline.mode">mode</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="OutlineMode
+
+
+  
+      module-attribute
+   (opencatwebjson.literals.OutlineMode)" href="../literals/#opencatwebjson.literals.OutlineMode">OutlineMode</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Outline mode.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Outline.type">type</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="OutlineType
+
+
+  
+      module-attribute
+   (opencatwebjson.literals.OutlineType)" href="../literals/#opencatwebjson.literals.OutlineType">OutlineType</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Outline type.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Outline.outline_color">outline_color</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="HexColor (opencatwebjson.classes.HexColor)" href="../classes/#opencatwebjson.classes.HexColor">HexColor</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Outline color.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Outline.outline_thickness">outline_thickness</span></code></td>
+            <td>
+                  <code><span title="int">int</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Outline thickness.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Outline.outline_transparency">outline_transparency</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="Range01 (opencatwebjson.classes.Range01)" href="../classes/#opencatwebjson.classes.Range01">Range01</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Outline transparency.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="opencatwebjson.elements.Corner" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>            <span class="doc doc-object-name doc-class-name">Corner</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-dataclass"><code>dataclass</code></small>
+  </span>
+
+<a href="#opencatwebjson.elements.Corner" class="headerlink" title="Permanent link">&para;</a></h3>
+<div class="doc-signature highlight"><pre><span></span><code><span class="nf">Corner</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">radius</span><span class="p">)</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+
+
+        <p>Rounded corner styling for UI elements.</p>
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Corner.name">name</span></code></td>
+            <td>
+                  <code><span title="str">str</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Corner identifier.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Corner.radius">radius</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="Tuple2
+
+
+  
+      module-attribute
+   (opencatwebjson.literals.Tuple2)" href="../literals/#opencatwebjson.literals.Tuple2">Tuple2</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Corner radius.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="opencatwebjson.elements.List" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>            <span class="doc doc-object-name doc-class-name">List</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-dataclass"><code>dataclass</code></small>
+  </span>
+
+<a href="#opencatwebjson.elements.List" class="headerlink" title="Permanent link">&para;</a></h3>
+<div class="doc-signature highlight"><pre><span></span><code><span class="nf">List</span><span class="p">(</span>
+    <span class="n">name</span><span class="p">,</span>
+    <span class="n">direction</span><span class="p">,</span>
+    <span class="n">padding</span><span class="p">,</span>
+    <span class="n">vertical_alignment</span><span class="p">,</span>
+    <span class="n">horizontal_alignment</span><span class="p">,</span>
+    <span class="n">wrap</span><span class="p">,</span>
+<span class="p">)</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+
+
+        <p>A list container layout element.</p>
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.List.name">name</span></code></td>
+            <td>
+                  <code><span title="str">str</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Element identifier.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.List.direction">direction</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="ListDirection
+
+
+  
+      module-attribute
+   (opencatwebjson.literals.ListDirection)" href="../literals/#opencatwebjson.literals.ListDirection">ListDirection</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>List direction (vertical/horizontal).</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.List.padding">padding</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="Tuple2
+
+
+  
+      module-attribute
+   (opencatwebjson.literals.Tuple2)" href="../literals/#opencatwebjson.literals.Tuple2">Tuple2</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Padding between items.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.List.vertical_alignment">vertical_alignment</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="VerticalAlignment
+
+
+  
+      module-attribute
+   (opencatwebjson.literals.VerticalAlignment)" href="../literals/#opencatwebjson.literals.VerticalAlignment">VerticalAlignment</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Vertical alignment of list items.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.List.horizontal_alignment">horizontal_alignment</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="HorizontalAlignment
+
+
+  
+      module-attribute
+   (opencatwebjson.literals.HorizontalAlignment)" href="../literals/#opencatwebjson.literals.HorizontalAlignment">HorizontalAlignment</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Horizontal alignment.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.List.wrap">wrap</span></code></td>
+            <td>
+                  <code><span title="bool">bool</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>If True, items wrap within container.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="opencatwebjson.elements.Grid" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>            <span class="doc doc-object-name doc-class-name">Grid</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-dataclass"><code>dataclass</code></small>
+  </span>
+
+<a href="#opencatwebjson.elements.Grid" class="headerlink" title="Permanent link">&para;</a></h3>
+<div class="doc-signature highlight"><pre><span></span><code><span class="nf">Grid</span><span class="p">(</span>
+    <span class="n">name</span><span class="p">,</span>
+    <span class="n">padding</span><span class="p">,</span>
+    <span class="n">size</span><span class="p">,</span>
+    <span class="n">vertical_alignment</span><span class="p">,</span>
+    <span class="n">horizontal_alignment</span><span class="p">,</span>
+<span class="p">)</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+
+
+        <p>Grid container layout element.</p>
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Grid.name">name</span></code></td>
+            <td>
+                  <code><span title="str">str</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Element identifier.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Grid.padding">padding</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="Tuple2
+
+
+  
+      module-attribute
+   (opencatwebjson.literals.Tuple2)" href="../literals/#opencatwebjson.literals.Tuple2">Tuple2</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Padding between grid cells.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Grid.size">size</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="Size2 (opencatwebjson.classes.Size2)" href="../classes/#opencatwebjson.classes.Size2">Size2</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Cell size.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Grid.vertical_alignment">vertical_alignment</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="VerticalAlignment
+
+
+  
+      module-attribute
+   (opencatwebjson.literals.VerticalAlignment)" href="../literals/#opencatwebjson.literals.VerticalAlignment">VerticalAlignment</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Vertical alignment.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Grid.horizontal_alignment">horizontal_alignment</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="HorizontalAlignment
+
+
+  
+      module-attribute
+   (opencatwebjson.literals.HorizontalAlignment)" href="../literals/#opencatwebjson.literals.HorizontalAlignment">HorizontalAlignment</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Horizontal alignment.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="opencatwebjson.elements.AspectRatio" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>            <span class="doc doc-object-name doc-class-name">AspectRatio</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-dataclass"><code>dataclass</code></small>
+  </span>
+
+<a href="#opencatwebjson.elements.AspectRatio" class="headerlink" title="Permanent link">&para;</a></h3>
+<div class="doc-signature highlight"><pre><span></span><code><span class="nf">AspectRatio</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">ratio</span><span class="p">)</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+
+
+        <p>Maintains a fixed aspect ratio for an element.</p>
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.AspectRatio.name">name</span></code></td>
+            <td>
+                  <code><span title="str">str</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Element identifier.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.AspectRatio.ratio">ratio</span></code></td>
+            <td>
+                  <code><span title="int">int</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Width-to-height ratio.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="opencatwebjson.elements.Constraint" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>            <span class="doc doc-object-name doc-class-name">Constraint</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-dataclass"><code>dataclass</code></small>
+  </span>
+
+<a href="#opencatwebjson.elements.Constraint" class="headerlink" title="Permanent link">&para;</a></h3>
+<div class="doc-signature highlight"><pre><span></span><code><span class="nf">Constraint</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">minimum_size</span><span class="p">,</span> <span class="n">maximum_size</span><span class="p">)</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+
+
+        <p>Size constraints for UI elements.</p>
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Constraint.name">name</span></code></td>
+            <td>
+                  <code><span title="str">str</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Element identifier.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Constraint.minimum_size">minimum_size</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="Tuple2
+
+
+  
+      module-attribute
+   (opencatwebjson.literals.Tuple2)" href="../literals/#opencatwebjson.literals.Tuple2">Tuple2</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Minimum width and height.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Constraint.maximum_size">maximum_size</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="MaxSize
+
+
+  
+      module-attribute
+   (opencatwebjson.literals.MaxSize)" href="../literals/#opencatwebjson.literals.MaxSize">MaxSize</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Maximum allowed size.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="opencatwebjson.elements.Gradient" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>            <span class="doc doc-object-name doc-class-name">Gradient</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-dataclass"><code>dataclass</code></small>
+  </span>
+
+<a href="#opencatwebjson.elements.Gradient" class="headerlink" title="Permanent link">&para;</a></h3>
+<div class="doc-signature highlight"><pre><span></span><code><span class="nf">Gradient</span><span class="p">(</span>
+    <span class="n">name</span><span class="p">,</span>
+    <span class="n">rotation</span><span class="p">,</span>
+    <span class="n">offset</span><span class="p">,</span>
+    <span class="n">gradient_transparency</span><span class="p">,</span>
+    <span class="n">gradient_color</span><span class="p">,</span>
+<span class="p">)</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+
+
+        <p>Gradient styling element.</p>
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Gradient.name">name</span></code></td>
+            <td>
+                  <code><span title="str">str</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Element identifier.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Gradient.rotation">rotation</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="Rotation (opencatwebjson.classes.Rotation)" href="../classes/#opencatwebjson.classes.Rotation">Rotation</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Gradient rotation.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Gradient.offset">offset</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="Tuple2
+
+
+  
+      module-attribute
+   (opencatwebjson.literals.Tuple2)" href="../literals/#opencatwebjson.literals.Tuple2">Tuple2</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Gradient offset.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Gradient.gradient_transparency">gradient_transparency</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="TransparencyGradient (opencatwebjson.classes.TransparencyGradient)" href="../classes/#opencatwebjson.classes.TransparencyGradient">TransparencyGradient</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Transparency gradient.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Gradient.gradient_color">gradient_color</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="ColorGradient (opencatwebjson.classes.ColorGradient)" href="../classes/#opencatwebjson.classes.ColorGradient">ColorGradient</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Color gradient.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="opencatwebjson.elements.Padding" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>            <span class="doc doc-object-name doc-class-name">Padding</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-dataclass"><code>dataclass</code></small>
+  </span>
+
+<a href="#opencatwebjson.elements.Padding" class="headerlink" title="Permanent link">&para;</a></h3>
+<div class="doc-signature highlight"><pre><span></span><code><span class="nf">Padding</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">bottom</span><span class="p">,</span> <span class="n">left</span><span class="p">,</span> <span class="n">right</span><span class="p">,</span> <span class="n">top</span><span class="p">)</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+
+
+        <p>Padding applied to a UI element.</p>
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Padding.name">name</span></code></td>
+            <td>
+                  <code><span title="str">str</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Element identifier.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Padding.bottom">bottom</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="Tuple2
+
+
+  
+      module-attribute
+   (opencatwebjson.literals.Tuple2)" href="../literals/#opencatwebjson.literals.Tuple2">Tuple2</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Bottom padding.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Padding.left">left</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="Tuple2
+
+
+  
+      module-attribute
+   (opencatwebjson.literals.Tuple2)" href="../literals/#opencatwebjson.literals.Tuple2">Tuple2</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Left padding.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Padding.right">right</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="Tuple2
+
+
+  
+      module-attribute
+   (opencatwebjson.literals.Tuple2)" href="../literals/#opencatwebjson.literals.Tuple2">Tuple2</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Right padding.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="opencatwebjson.elements.Padding.top">top</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="Tuple2
+
+
+  
+      module-attribute
+   (opencatwebjson.literals.Tuple2)" href="../literals/#opencatwebjson.literals.Tuple2">Tuple2</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Top padding.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.sections", "navigation.indexes", "search.suggest", "search.highlight", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>
