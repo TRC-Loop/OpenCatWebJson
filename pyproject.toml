@@ -1,6 +1,6 @@
 [project]
 name = "opencatwebjson"
-version = "0.0.2"
+version = "0.0.3"
 description = "Python Library for handling CatWeb's JSON Formats"
 license = "GPLv3" 
 readme = "README.md"
@@ -21,6 +21,12 @@ classifiers = [
 dev = [
     "pytest (>=8.4.2,<9.0.0)",
     "ruff (>=0.13.1,<0.14.0)"
+]
+docs = [
+    "mkdocs (>=1.6.1,<2.0.0)",
+    "mkdocs-material (>=9.6.20,<10.0.0)",
+    "mkdocstrings[python] (>=0.30.1,<0.31.0)",
+    "mkdocs-autorefs (>=1.4.3,<2.0.0)"
 ]
 
 

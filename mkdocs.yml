@@ -1,0 +1,54 @@
+
+site_name: OpenCatWebJSON
+site_description: A Python library for working with OpenCat Web JSON
+site_url: https://trc-loop.github.io/opencatwebjson
+repo_url: https://github.com/TRC-Loop/opencatwebjson
+repo_name: TRC-Loop/opencatwebjson
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.sections
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+  language: en
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+  - autorefs
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: ["."]   # <── instead of setup_commands
+          options:
+            docstring_style: google
+            show_source: true
+            merge_init_into_class: true
+            separate_signature: true
+            members_order: source
+
+nav:
+  - Home: index.md
+  - Usage: README.md
+  - Reference:
+      - Classes: reference/classes.md
+      - Elements: reference/elements.md
+      - Literals: reference/literals.md
