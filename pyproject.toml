@@ -1,0 +1,29 @@
+[project]
+name = "opencatwebjson"
+version = "0.0.0b"
+description = "Python Library for handling CatWeb's JSON Formats"
+license = "GPLv3" 
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "orjson (>=3.11.3,<4.0.0)"
+]
+homepage = "https://github.com/TRC-Loop/opencatwebjson"
+repository = "https://github.com/TRC-Loop/opencatwebjson"
+keywords = ["parser", "json", "catweb", "roblox"]  # pick relevant ones
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GPLv3",
+    "Operating System :: OS Independent",
+]
+
+[dependency-groups]
+dev = [
+    "pytest (>=8.4.2,<9.0.0)",
+    "ruff (>=0.13.1,<0.14.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
