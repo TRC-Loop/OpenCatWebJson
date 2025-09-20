@@ -1,6 +1,6 @@
 [project]
 name = "opencatwebjson"
-version = "0.0.0"
+version = "0.0.2"
 description = "Python Library for handling CatWeb's JSON Formats"
 license = "GPLv3" 
 readme = "README.md"

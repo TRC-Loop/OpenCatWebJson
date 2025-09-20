@@ -1,5 +1,7 @@
-from .literals import Number
 import math
+from typing import Union
+
+Number = Union[int, float]
 
 class HexColor:
     def __init__(self, hex_code: str):
