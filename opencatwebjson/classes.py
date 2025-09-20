@@ -1,4 +1,4 @@
-from literals import Number
+from .literals import Number
 import math
 
 class HexColor:

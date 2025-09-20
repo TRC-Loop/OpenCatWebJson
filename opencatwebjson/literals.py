@@ -1,5 +1,5 @@
 from typing import Literal, Union, NamedTuple
-from classes import Size2
+from .classes import Size2
 
 Number = Union[int, float]
 

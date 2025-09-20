@@ -3,8 +3,8 @@
 
 from dataclasses import dataclass
 from typing import Any
-from literals import CanvasSize, FontStyle, FontWeight, HorizontalAlignment, ListDirection, MaxSize, OutlineMode, OutlineType, ProductType, ResampleMode, ScaleType, TextSize, Truncate, Tuple2, Vec2, VerticalAlignment
-from classes import ColorGradient, HexColor, Range01, Rotation, Size2, TransparencyGradient, Vector2
+from .literals import CanvasSize, FontStyle, FontWeight, HorizontalAlignment, ListDirection, MaxSize, OutlineMode, OutlineType, ProductType, ResampleMode, ScaleType, TextSize, Truncate, Tuple2, Vec2, VerticalAlignment
+from .classes import ColorGradient, HexColor, Range01, Rotation, Size2, TransparencyGradient, Vector2
 
 @dataclass
 class Page:
