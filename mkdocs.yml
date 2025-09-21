@@ -16,6 +16,7 @@ theme:
     - search.highlight
     - content.code.copy
     - content.code.annotate
+    - content.action.edit
   language: en
 
 markdown_extensions:
@@ -47,7 +48,6 @@ plugins:
 
 nav:
   - Home: index.md
-  - Usage: README.md
   - Reference:
       - Classes: reference/classes.md
       - Elements: reference/elements.md
