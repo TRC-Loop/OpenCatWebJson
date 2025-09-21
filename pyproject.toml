@@ -10,7 +10,7 @@ dependencies = [
 ]
 homepage = "https://github.com/TRC-Loop/opencatwebjson"
 repository = "https://github.com/TRC-Loop/opencatwebjson"
-keywords = ["parser", "json", "catweb", "roblox"]  # pick relevant ones
+keywords = ["parser", "json", "catweb", "roblox"]
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
