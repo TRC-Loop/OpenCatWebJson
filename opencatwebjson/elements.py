@@ -115,7 +115,7 @@ class Image:
     
     Attributes:
         name (str): Element identifier.
-        image_id (int): ID of the decal image.
+        image_id (int): ID of the decal image. See: [Roblox Decal Store](https://create.roblox.com/store/decals) 
         image_transparency (Range01): Image transparency.
         scale_type (ScaleType): Scaling mode of the image.
         tint (HexColor): Tint applied to the image.
