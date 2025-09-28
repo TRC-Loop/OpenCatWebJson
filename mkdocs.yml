@@ -1,4 +1,3 @@
-
 site_name: OpenCatWebJSON
 site_description: A Python library for working with OpenCat Web JSON
 site_url: https://trc-loop.github.io/opencatwebjson
@@ -38,7 +37,7 @@ plugins:
   - mkdocstrings:
       handlers:
         python:
-          paths: ["."]   # <── instead of setup_commands
+          paths: ["."]
           options:
             docstring_style: google
             show_source: true
