@@ -149,18 +149,18 @@ class Rotation:
 class GradientStop:
     """Represents a stop in a gradient with a position and a value."""
 
-    def __init__(self, position: float, value):
+    def __init__(self, position: float, value: float):
         """
         Args:
             position (float): Position along gradient (0 to 1).
-            value: Value at this stop (float for transparency, str for color).
+            value (float): Value at this stop (float for transparency, str for color).
         
         Raises:
             ValueError: If position is not between 0 and 1.
         """
         if not 0 <= position <= 1:
             raise ValueError("Position must be between 0 and 1")
-        self.position = position
+        self.position = float(position)
         self.value = value
 
     def __repr__(self):
