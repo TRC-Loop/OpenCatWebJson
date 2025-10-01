@@ -47,6 +47,7 @@ plugins:
 
 nav:
   - Home: index.md
+  - JSON: json_format.md
   - Reference:
       - Classes: reference/classes.md
       - Elements: reference/elements.md
